@@ -10,6 +10,8 @@ gem "rails", "~> 7.0.8"
 gem "sprockets-rails"
 
 # Use sqlite3 as the database for Active Record
+gem 'pg', '~> 1.5', '>= 1.5.4'
+gem 'rails_12factor', '~> 0.0.3'
 
 gem "activerecord"
 
@@ -72,11 +74,4 @@ group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem "capybara"
   gem "selenium-webdriver"
-
-end
-
-group :production do
-  gem 'pg', '~> 0.21.0'
-  gem 'rails_12factor', '~> 0.0.3'
-  
 end
